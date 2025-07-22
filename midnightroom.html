@@ -1,0 +1,37 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Midnight Room 08</title>
+    <script>
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            alert("Clique direito desabilitado nesta página.");
+        });
+    </script>
+
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if(e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        }   
+
+    </script>
+    <script>
+        function abrirProximaPorta() {
+            const chave = document.getElementById("senha").value.trim();
+            if (chave) {
+                window.location.href = chave + ".html";
+            } else {
+                alert("Chave secreta.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

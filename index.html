@@ -1,0 +1,149 @@
+<html>
+<head>
+    <title>Midnight Escape Room</title>
+<!--
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #eee;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            font-size: 24px;
+            text-decoration: none;
+            color: #333;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+
+        .door-container {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .door {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .half {
+            width: 50%;
+            height: 100%;
+            background: #654321;
+            position: absolute;
+            top: 0;
+            transition: transform 2s ease;
+            transform-origin: center left;
+            box-shadow: inset 0 0 5px #000;
+        }
+
+        .half.right {
+            left: 50%;
+            transform-origin: center right;
+        }
+
+        .open .half.left {
+            transform: rotateY(-90deg);
+        }
+
+        .open .half.right {
+            transform: rotateY(90deg);
+        }
+    </style>
+    -->
+
+        <script>
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            alert("Clique direito desabilitado nesta página.");
+        });
+    </script>
+
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if(e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        }   
+
+    </script>
+    <script>
+        function abrirProximaPorta() {
+            const chave = document.getElementById("senha").value.trim();
+            if (chave) {
+                window.location.href = chave + ".html";
+            } else {
+                alert("Chave Secreta.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 align="center"> Bem-vindo ao nosso Escape Room Online! </h1> <br>
+    <h2>
+        Prepare-se para mergulhar em uma experiência cheia de enigmas e diversão! Tudo o que você precisa para avançar está dentro das páginas deste site – não é necessário buscar informações na internet. <br>
+        <br>    
+        <br>
+        📌 Importante saber antes de começar: <br>
+        <br>
+        Não há restrição de idade – todos podem jogar! <br>
+        <br>
+        É necessário apenas um conhecimento básico de como usar um navegador de internet. <br>
+
+        A chave para passar para a próxima etapa deve ser digitada no campo chamado “senha secreta”. <br>
+        <br>
+        Agora é com você: observe, pense fora da caixa e divirta-se resolvendo os mistérios! <br>       
+    </h2>
+
+   
+    <h3 align="center"><a href="sala01.html">INICIAR</a></h3>
+
+
+<!--
+<a id="startBtn">Iniciar</a>
+
+<div class="door-container">
+    <div class="door" id="door">
+        <div class="half left"></div>
+        <div class="half right"></div>
+    </div>
+</div>
+
+<audio id="doorSound" src="porta.mp3"></audio>
+
+<script>
+    const startBtn = document.getElementById('startBtn');
+    const door = document.getElementById('door');
+    const doorSound = document.getElementById('doorSound');
+
+    startBtn.addEventListener('click', function () {
+        door.classList.add('open');
+        doorSound.currentTime = 0; // para garantir que comece do início
+        doorSound.play();
+
+        setTimeout(() => {
+            window.location.href = 'sala01.html';
+        }, 2000);
+    });
+</script>
+-->
+
+</body>
+
+
+</html>

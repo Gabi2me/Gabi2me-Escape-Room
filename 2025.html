@@ -1,0 +1,43 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Midnight Room 02</title>
+    <script>
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            alert("Clique direito desabilitado nesta página.");
+        });
+    </script>
+
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+        document.onkeydown = function(e) {
+            if(e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        }   
+
+    </script>
+    <script>
+        function abrirProximaPorta() {
+            const chave = document.getElementById("senha").value.trim();
+            if (chave) {
+                window.location.href = chave + ".html";
+            } else {
+                alert("Chave Secreta.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Digite a Chave Secreta para abrir a próxima porta:</h2>
+    <input type="text" id="senha" placeholder="Só aceito 0 ou 1">
+    <button onclick="abrirProximaPorta()">Abrir a próxima porta</button> 
+    <br>
+    <font>Dica:</font>
+    <img src="R.gif" alt="Pessoa rezando de joelhos. O que isso significa?"
+    <br>
+</body>
+</html>
