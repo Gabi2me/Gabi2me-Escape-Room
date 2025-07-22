@@ -1,21 +1,39 @@
-Tema
-Enigmas construidos dentro de uma pagina html cm javascript.
+-Tema
+  Um jogo de escape room com enigmas construídos inteiramente em uma página web usando apenas HTML e JavaScript.
 
-Objetivo
-Aplicar o aprendizado adquirido no curso de DS 1o ano da ETEC Hortolandia
-Aprender novas tecnicas e comandos
-Exercitar logica de programacao
-Me divertir!
+ -Objetivo
+  Aplicar os conhecimentos adquiridos no 1º ano do curso de DS na ETEC Hortolândia.
 
-Formato do Escape Room
-Por envolver apenas HTML e Javascript, tive que inibir o acesso ao codigo em algumas paginas para que o usuario nao tenha acesso as respostas por meio do codigo
-O nome das paginas html nao podem ser sequenciais: sala001.html, sala002, sala003 senao o usuario poderia pular para a ultima sala facilmente entao tive que pensar numa forma de a proxima pagina ser exatamente a resposta certa do enigma anterior.
+  Aprender novas técnicas e comandos em JavaScript e HTML.
 
-Time responsavel por desenvolvimento
-Inicialmente estou sozinha pensando nos enigmas, desenvolvendo o html, javascript e trabalhando no design de cada sala, mas quem tiver o interesse de contribuir sera muito bem vindo.
+  Exercitar a lógica de programação.
 
-Desafios
-Encontrar novos enigmas
-Aprender Javascript
-Aprender mais sobre html
-inibir todas as formas de acesso
+  E, claro… me divertir!
+
+- Formato do Escape Room
+  Por ser desenvolvido apenas com HTML e JavaScript, precisei implementar mecanismos para inibir o acesso ao código em algumas páginas e evitar que o usuário descubra as respostas inspecionando o código-fonte.
+
+  Os nomes das páginas HTML não são sequenciais (ex.: sala001.html, sala002.html…), pois isso permitiria que o usuário pulasse direto para a última sala sem resolver os enigmas.
+
+  A próxima página só é acessível quando o jogador insere corretamente a resposta do enigma anterior, que coincide com o nome da próxima página.
+
+ -Time de desenvolvimento
+  Atualmente, o projeto está sendo desenvolvido por mim sozinha:
+
+  Elaborando os enigmas
+
+  Desenvolvendo as páginas HTML e scripts JavaScript
+
+  Criando o design e a experiência de cada sala
+
+  No entanto, toda contribuição é muito bem-vinda para novas ideias, desafios ou melhorias!
+
+ -Desafios enfrentados
+  Criar e selecionar novos enigmas interessantes e criativos.
+
+  Aprender e aplicar conceitos de JavaScript.
+
+  Aprimorar meus conhecimentos em HTML.
+
+  Descobrir formas de dificultar ao máximo o acesso não autorizado ao código e às respostas.
+
