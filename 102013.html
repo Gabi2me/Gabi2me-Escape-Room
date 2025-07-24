@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
+<head>
 
-        <link rel="shortcut icon" href=CSS/Untitled.png>
+    <link rel="shortcut icon" href=CSS/Untitled.png>
 
-            <title>
-                A senha é: 102013
-            </title>
+        <title>
+            Midnight-Room
+        </title>
 
-            <meta charset="utf-8">
+        <meta charset="utf-8">
 
-            <link rel="stylesheet" href="css/escape.css">
+        <link rel="stylesheet" href="css/escape.css">
 
-        <script>
-            document.addEventListener("contextmenu", function (event) {
-                event.preventDefault();
-                alert("Hoje não ein! Trapaça não dá.");
-            });
+    <script>
+        document.addEventListener("contextmenu", function (event) {
+            event.preventDefault();
+            alert("Hoje não ein! Trapaça não dá.");
+        });
         </script>
 
         <script>
@@ -37,21 +37,25 @@
                 if (chave) {
                     window.location.href = chave + ".html";
                 } else {
-                    alert("Chave Secreta.");
+                    alert("Só aceito 0 e 1.");
                 }
             }
         </script>
     </head>
 <body>
     <div id="conteudo">
-            <h2 align="center">Digite a chave secreta para abrir a próxima porta:</h2>
-            <p>Dica:A senha está visível. </p>
+            <h2 align="center">Digite a Chave Secreta para abrir a próxima porta:</h2>
+            <p>Dica: A senha está invisível.</p>
             <input type="text" id="senha" placeholder="Chave Secreta">
-    <button onclick="abrirProximaPorta()">Ir para a próxima sala</button>
+            <button onclick="abrirProximaPorta()">Ir para a próxima sala</button> 
         </div>
 
         <div id="rodape">
-            <h4>Sala 1</h4>
+
+            <p style="color:#d2d2d2c1">Senha:armadilha</p>
+            <h4>Sala 2</h4>
+
         </div>
+
 </body>
 </html>

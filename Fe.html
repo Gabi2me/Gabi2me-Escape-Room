@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Midnight Room 02</title>
+
+    <head>
+
+        <link rel="shortcut icon" href=CSS/Untitled.png>
+
+            <title>
+                Midnight-Room
+            </title>
+
+            <meta charset="utf-8">
+
+            <link rel="stylesheet" href="css/escape.css">
     <script>
         document.addEventListener("contextmenu", function (event) {
             event.preventDefault();
@@ -27,19 +36,25 @@
             if (chave) {
                 window.location.href = chave + ".html";
             } else {
-                alert("Só aceito 0 e 1.");
+                alert("Chave secreta.");
             }
         }
     </script>
 </head>
 <body>
-    <h2>Digite a Chave Secreta para abrir a próxima porta:</h2>
-    <input type="text" id="senha" placeholder="Chave Secreta">
-    <button onclick="abrirProximaPorta()">Abrir a próxima porta</button> <br>
-    <font color="white" align="center">Senha:boca</font>
+    <div id="conteudo">
+        <h2>Clique no relogio correto!</h2>
+        <p>Encontre o relogio do Escape Room</p>
+            <br>
+        <img src="clocks.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" href="midnightroom.html" coords="316,110,23" shape="circle">
+        </map>
+    </div>
     <br>
-    <font>Dica: A senha está invisível.</font>
-
-
+    <div id="rodape">
+        <h4>Sala 6</h4>
+    </div>   
 </body>
 </html>
